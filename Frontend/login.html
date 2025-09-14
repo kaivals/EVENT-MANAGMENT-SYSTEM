@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventHub - Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <!-- Branding Section -->
+      <div class="auth-banner">
+        <h1>🎉 EventHub</h1>
+        <p>Your one-stop solution for managing and attending events.</p>
+      </div>
+
+      <!-- Login Form -->
+      <div class="auth-form">
+        <form id="loginForm">
+          <h2>Login</h2>
+          <p class="subtitle">Welcome back! Please enter your details.</p>
+
+          <div class="input-group">
+            <input type="email" id="loginEmail" required />
+            <label for="loginEmail">Email</label>
+          </div>
+
+          <div class="input-group">
+            <input type="password" id="loginPassword" required />
+            <label for="loginPassword">Password</label>
+          </div>
+
+          <button type="submit" class="btn">Login</button>
+
+          <p class="switch">
+            Don’t have an account? <a href="register.html">Register</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background: #f6f9fc;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.auth-container {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+/* Left Branding */
+.auth-banner {
+  flex: 1;
+  background: linear-gradient(135deg, #84fab0, #8fd3f4);
+  color: white;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-banner h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.auth-banner p {
+  font-size: 18px;
+  max-width: 80%;
+  line-height: 1.6;
+}
+
+/* Right Form */
+.auth-form {
+  flex: 1;
+  padding: 50px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  max-width: 350px;
+}
+
+form h2 {
+  margin-bottom: 8px;
+  font-size: 28px;
+  color: #333;
+}
+
+.subtitle {
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 5px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 15px;
+  background: transparent;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #4db6ac;
+}
+
+.input-group label {
+  position: absolute;
+  left: 5px;
+  top: 12px;
+  color: #777;
+  font-size: 15px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -10px;
+  font-size: 13px;
+  color: #4db6ac;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  outline: none;
+  background: linear-gradient(135deg, #4db6ac, #81d4fa);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(77, 182, 172, 0.3);
+}
+
+/* Switch */
+.switch {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.switch a {
+  color: #4db6ac;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.switch a:hover {
+  color: #00897b;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .auth-banner {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .auth-banner p {
+    max-width: 100%;
+  }
+
+  .auth-form {
+    padding: 30px 20px;
+  }
+}
